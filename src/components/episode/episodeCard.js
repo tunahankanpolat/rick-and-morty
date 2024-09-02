@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { CardWrapper, CardItem } from "../shared"
+import EPISODE_IMAGES from "../../data/episodeImages"
 
 const Card = ({ id, name, air_date, episode }) => {
   const headingMaxLength = 23
@@ -9,8 +10,7 @@ const Card = ({ id, name, air_date, episode }) => {
   const h2Classes = isSmallHeading
     ? `m-0 p-0 text-xl font-bold`
     : `m-0 p-0 text-2xl font-bold`
-  const episodeImages = JSON.parse(process.env.GATSBY_EPISODE_IMAGES)
-  const image = episodeImages[id - 1]
+  const image = EPISODE_IMAGES[id - 1]
   return (
     <CardWrapper>
       <div className="flex-2 w-full">

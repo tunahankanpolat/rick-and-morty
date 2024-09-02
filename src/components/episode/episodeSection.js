@@ -2,16 +2,14 @@ import React from "react"
 import { Link } from 'gatsby'
 import CardItem from "../shared/cardItem"
 import PropTypes from "prop-types"
-
+import EPISODE_IMAGES from "../../data/episodeImages"
 const EpisodeSection = ({ id, name, air_date, episode, characters }) => {
   const headingMaxLength = 23
   const isSmallHeading = name.length > headingMaxLength
   const h2Classes = isSmallHeading
     ? `m-0 p-0 text-4xl font-bold phone:text-xl mobile:text-2xl`
     : `m-0 p-0 text-8xl font-bold phone:text-2xl mobile:text-4xl`
-
-    const episodeImages = JSON.parse(process.env.GATSBY_EPISODE_IMAGES)
-    const image = episodeImages[id - 1] // Adjust for 0-based index
+    const image = EPISODE_IMAGES[id - 1] // Adjust for 0-based index
   return (
     <section className="flex flex-row items-stretch justify-center phone:px-0 phone:py-0 bg-[#272b33] h-[calc(100vh-60px)] phone:h-auto mobile:h-auto mobile:flex-col phone:flex-col">
       <div className="flex-2 h-full w-full">
