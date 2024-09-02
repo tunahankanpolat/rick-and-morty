@@ -1,0 +1,6 @@
+services:
+  rick-and-morty-frontend:
+    build: ./
+    container_name:  rick-and-morty-frontend
+    ports:
+      - "9000:9000"

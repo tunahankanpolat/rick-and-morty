@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-backBlack;
+  font-variant-ligatures: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  text-decoration-skip-ink: auto;
+}
+
+header,
+main {
+  @apply bg-white;
+}
+
+a {
+  @apply text-black;
+}
+
+p a,
+li a {
+  @apply text-black border-b-2 border-primary transition-all;
+}
+
+a:hover,
+a:focus {
+  @apply no-underline border-b-0 text-primary;
+}
+
+li {
+  @apply list-none;
+}
+
+*::selection {
+  @apply text-primary bg-backBlack;
+}
+
+img {
+  @apply w-full h-auto block;
+}
+
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
