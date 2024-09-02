@@ -1,4 +1,4 @@
-export default EPISODE_IMAGES = [
+const EPISODE_IMAGES = [
   "https://m.media-amazon.com/images/M/MV5BNzlhNGI0MTUtOWZlNS00ZmQ2LTk2NTYtMGMwMzRmOGViZWIyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
   "https://m.media-amazon.com/images/M/MV5BNzUyNmIxYzYtMTM2My00ZTZjLWFmODYtNmFmMDgyZDY4OWU4XkEyXkFqcGdeQXVyNjg0Nzk2Nzc@._V1_.jpg",
   "https://m.media-amazon.com/images/M/MV5BM2I0Nzg0YTktYTc2Zi00NTk4LWI5ZDQtMmVhYjBjZmRmNGM0XkEyXkFqcGdeQXVyNjg4ODczODM@._V1_.jpg",
@@ -51,3 +51,5 @@ export default EPISODE_IMAGES = [
   "https://m.media-amazon.com/images/M/MV5BYzk4ZGJmZDYtMmUxNy00NzNiLWFhZWMtNWM3NDI1ZmE4ZTk1XkEyXkFqcGdeQXVyODkxNzAwMDI@._V1_.jpg",
   "https://m.media-amazon.com/images/M/MV5BZjhlOTk2NjAtMjczZC00OTFhLTkxY2QtY2E2ZjU2YzgwYmRhXkEyXkFqcGdeQXVyODkxNzAwMDI@._V1_.jpg",
 ]
+
+export default EPISODE_IMAGES
